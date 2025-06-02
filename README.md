@@ -65,11 +65,11 @@ begin
   MultiplusCard := TDTMultiplusCard.Create(Self);
   try
     // Configurando as propriedades
-    MultiplusCard.CNPJ := '12345678901234';
-    MultiplusCard.CodLoja := '001';
-    MultiplusCard.PDV := '001';
-    MultiplusCard.Data := '';
-    MultiplusCard.Comunicacao := '1';
+    MultiplusCard.Configuracoes.CNPJ := '12345678901234';
+    MultiplusCard.Configuracoes.CodLoja := '001';
+    MultiplusCard.Configuracoes.PDV := '001';
+    MultiplusCard.Configuracoes.Data := '';
+    MultiplusCard.Configuracoes.Comunicacao := '1';
 
     // Efetuando a transação
     MultiplusCard.EfetuaTransacao(
